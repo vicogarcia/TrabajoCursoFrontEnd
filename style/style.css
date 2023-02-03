@@ -1,48 +1,87 @@
 *{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
     
 }
-
 body{
-    padding: 10px 300px 10px 300px;
-}
-
-
-h1{
-    font-size: 60px;
-    font-weight: 100;
+    /* padding: 10px 100px 10px 100px; */
 }
 
 header{
-    width: 100%;
-    height: 400px;
-    background-image: url(../assets/design1_image2.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: relative;
+    background-color: #3B44F6;
+    min-height: 30vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    background-color: #3EC70B;
+    min-height: 60vh;
+
 }
 
 nav{
-    position: absolute;
-    left: 75%;
-    top: -8%;
- 
+    background-color: #F7EC09;
+    min-height: 10vh;
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
+h1{
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.banner{
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    align-items: center;
+    background-size: 100% 100%;
+    animation: banner 10s infinite;
+
+}
+
+@keyframes banner {
+    0%, 20% {
+        background-image: url(../assets/design1_image2.jpg);
+    }
+    25%, 45% {
+        background-image: url(../assets/hockey1.jpg);
+    }
+    50%, 70% {
+        background-image: url(../assets/hockey2.jpg);
+    }
+    75%, 100% {
+        background-image: url(../assets/hockey3.jpg);
+    }
+
+}
+
 nav a{
     text-decoration: none;
     color: white;
     background-color: rgb(121, 121, 214);
     border: 2px solid black;
-    height: 30px;
-    width: 80px;
-    padding-top: 10px;
+    width: 11rem;
+    height: 3.5rem;
+    padding: 0.8rem;
     display: inline-block;
     text-align: center;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.412);
+    border-radius: 1rem;
+    transition: all 0.5s;
 
 }
+
 
 .active{
     background-color: green;
@@ -51,6 +90,7 @@ nav a{
 }
 
 a:hover{
+    transform: scale(1.0) rotate(5deg);
     background-color: green;
     color: white;
 
@@ -67,12 +107,10 @@ section{
     width: 800px;
     height: 200px;
     display: block;
-    /* border-radius: 20px;
+    border-radius: 20px;
     padding: 10px;
     margin: 10px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.412); */
-    position: relative;
-    left: 150px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.412);
 
 }
 
@@ -80,24 +118,10 @@ article{
     width: 400px;
     height: 100px;
     display: block;
-/*     border-radius: 20px;
+    border-radius: 20px;
     padding: 10px;
     margin: 10px;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.412); */
-    position: relative;
-    left: 150px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.412);
 
 }
 
-.p-position{
-    position: relative;
-    left: 200px;
-    top:20px;
-    padding: 10px;
-}
-
-figure{
-    display: inline-block;
-    position: relative;
-    top: 120px;
-}
