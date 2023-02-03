@@ -160,7 +160,24 @@ address{
 }
 
 ul{
-    list-style-type: circle;
+    list-style-type:circle;
+    margin: 20px;
 }
 
+ol{
+    margin: 20px;
+    padding: 10px;
+}
 
+.listas{
+    padding: 20px;
+    margin: 20px;
+}
+
+.lista-abc{
+    list-style-type:lower-alpha;
+}
+
+dt{
+    font-size: large;
+}
